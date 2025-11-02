@@ -2,8 +2,90 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.container {
+  border: 1px solid yellow;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(img/coffee_image.png);
+}
+
 header .logo {
   font-family: "Clicker Script", cursive;
   font-weight: 400;
   font-style: normal;
+  border: 1px solid red;
+  font-size: 35px;
+  margin-right: 245px;
+}
+
+header a {
+  color: #fff;
+}
+
+header nav {
+  border: 1px solid red;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header ul {
+  border: 1px solid red;
+  display: inline-block;
+  margin-right: 200px;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+header ul a,
+.signin-btn {
+  transition: 0.3s;
+}
+
+header ul a:hover,
+.signin-btn:hover {
+  opacity: 0.8;
+}
+
+header ul li:last-child {
+  margin-right: 0;
+}
+
+header .login {
+  border: 1px solid red;
+  display: inline-block;
+}
+
+.hero {
+  border: 1px solid red;
+}
+
+.signin-btn {
+  margin-right: 35px;
+  text-decoration: underline;
+}
+
+.signup-btn {
+  color: #1e1e1e;
+  background-color: #f9c06a;
+  border-radius: 24px;
+  padding: 14px 27px 15px;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  box-shadow: 0 0 10px 2px #666;
 }
