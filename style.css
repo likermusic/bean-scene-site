@@ -1,13 +1,13 @@
 :root {
   --btn-background: #f9c06a;
   --btn-paddings: 14px 26px;
-  --btn-color: #1e1e1e;
   --btn-radius: 24px;
 
   --line-height: 34px;
   --color-light: white;
   --color-dark: #707070;
   --color-coffee: #603809;
+  --color-black: #1e1e1e;
 
   --font-family-logo: "Clicker Script", cursive;
   --font-text: 20px;
@@ -32,17 +32,23 @@ body,
 }
 
 .btn {
-  color: var(--btn-color);
+  color: var(--color-black);
   background-color: var(--btn-background);
   border-radius: var(--btn-radius);
   padding: var(--btn-paddings);
   display: inline-block;
   transition: 0.3s;
+  font-weight: bold;
 }
 
 .dark-heading {
   color: var(--color-coffee);
   font-size: 54px;
+}
+
+.card-back {
+  background-color: #fff9f1;
+  border: 1px solid #f9c06a;
 }
 
 header {
@@ -162,4 +168,102 @@ header .login {
   display: inline-block;
   margin-right: 80px;
   vertical-align: 60px;
+}
+
+.products {
+  border: 1px solid red;
+  margin: 0px 0 82px 0;
+}
+
+.products h2 {
+  text-align: center;
+}
+
+.products .description {
+  color: var(--color-dark);
+  text-align: center;
+  margin: 16px 0 32px 0;
+  font-size: var(--font-text);
+}
+
+.products .card {
+  display: inline-block;
+  text-align: center;
+  margin-right: 14px;
+}
+.products .card:last-child {
+  margin-right: 0;
+}
+
+.products .card-back > * {
+  display: block;
+}
+
+.products .card-back {
+  border-top: none;
+  margin-top: -20px;
+}
+
+.products .type {
+  color: var(--color-coffee);
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+.products .characteristics {
+  color: var(--color-black);
+  margin-bottom: 6px;
+}
+.products .price {
+  color: var(--color-coffee);
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.products .btn {
+  display: inline-block;
+  position: relative;
+  top: 25px;
+}
+
+.features {
+  text-align: center;
+}
+
+.features .description {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.features .card {
+  display: inline-block;
+  text-align: center;
+  padding: 36px 39px;
+}
+
+.features .card > * {
+  display: block;
+}
+
+.features .card img {
+  display: inline-block;
+}
+.features .type {
+  color: var(--color-coffee);
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+.features .text {
+  color: var(--color-dark);
+  font-size: var(--font-text);
+  width: 176px;
+}
+
+.features .card:hover {
+  background-color: #ffeed8;
+  border: none;
 }
