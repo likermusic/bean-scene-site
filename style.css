@@ -11,6 +11,7 @@
 
   --font-family-logo: "Clicker Script", cursive;
   --font-text: 20px;
+  --font-heading: 54px;
 }
 
 body {
@@ -43,7 +44,7 @@ body,
 
 .dark-heading {
   color: var(--color-coffee);
-  font-size: 54px;
+  font-size: var(--font-heading);
 }
 
 .card-back {
@@ -266,4 +267,95 @@ header .login {
 .features .card:hover {
   background-color: #ffeed8;
   border: none;
+}
+
+.offer {
+  background-image: url(img/cup.png), url(img/coffee_bean.png),
+    url(img/Group\ 36.png);
+
+  padding-block: 135px;
+  background-repeat: no-repeat;
+  background-size: 300px 467px, 550px 574px, cover;
+  background-position: 88%, right, 0;
+  margin-block: 82px;
+}
+
+.offer .text {
+  width: 575px;
+}
+
+.offer .text h2 {
+  color: var(--color-light);
+  font-size: var(--font-heading);
+}
+
+.offer .text p {
+  color: var(--color-light);
+  font-size: var(--font-text);
+  line-height: var(--line-height);
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.feedback {
+  margin-block: 82px;
+  text-align: center;
+}
+
+.feedback .description {
+  margin-top: 16px;
+  color: var(--color-dark);
+  font-size: var(--font-text);
+}
+
+.slider-wrapper {
+  border: 2px solid red;
+  padding-inline: 41px;
+  padding-block: 57px;
+}
+.slider {
+  border: 2px solid green;
+}
+
+.slide {
+  background-color: #fff9f1;
+  padding: 140px 100px 17.5px;
+  border: 2px solid #f9c06a70;
+  position: relative;
+}
+.quote {
+  position: absolute;
+  top: 60px;
+  left: 29px;
+}
+
+.slide p {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 17px;
+}
+
+.slide h3 {
+  color: var(--color-coffee);
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.slide .status {
+  display: block;
+  font-size: var(--font-text);
+  color: var(--color-dark);
+  margin-bottom: 8px;
+}
+.slide .avatar {
+  border-radius: 16px;
+  width: 83px;
+  height: 83px;
+  background-image: url(img/man.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px;
+  margin: 0 auto;
 }
